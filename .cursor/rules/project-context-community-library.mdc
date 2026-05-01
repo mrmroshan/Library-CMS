@@ -1,0 +1,16 @@
+---
+description: Core product constraints for community website and protected library access
+alwaysApply: true
+---
+
+# Community Library Product Context
+
+- Build for two zones: public community content and authenticated library access.
+- Keep library PDFs restricted to registered users only.
+- Never expose direct public file URLs for protected PDFs.
+- Enforce authorization in backend policies/middleware, not only UI checks.
+- Prefer signed/temporary download links with access checks and expiry.
+- Track download activity for auditing and abuse monitoring.
+- Make all user-facing content clear: public article vs members-only library resource.
+- Keep accessibility and mobile responsiveness as baseline requirements.
+- Optimize for maintainability: clear service boundaries, tests, and documented decisions.
