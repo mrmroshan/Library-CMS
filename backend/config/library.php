@@ -2,6 +2,7 @@
 
 return [
     'storage_provider' => env('LIBRARY_STORAGE_PROVIDER', 'local'),
+    'upload_max_kb' => (int) env('LIBRARY_UPLOAD_MAX_KB', 204800),
 
     'providers' => [
         'local' => [

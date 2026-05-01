@@ -43,6 +43,7 @@
                     PDF file
                     <input type="file" name="pdf" accept="application/pdf" required>
                 </label>
+                <p class="meta">Maximum upload size: {{ $uploadLimitMb }} MB</p>
                 <label style="display:flex; align-items:center; gap:8px;">
                     <input type="checkbox" name="is_visible" value="1" style="width:auto;" {{ old('is_visible', '1') ? 'checked' : '' }}>
                     Visible in public library list

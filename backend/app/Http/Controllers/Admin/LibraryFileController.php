@@ -15,6 +15,8 @@ class LibraryFileController extends Controller
 {
     public function index()
     {
+        $uploadMaxKb = max(1024, (int) config('library.upload_max_kb', 204800));
+
         $files = LibraryFile::query()
             ->with(['uploader', 'category'])
             ->orderByDesc('id')
@@ -24,18 +26,23 @@ class LibraryFileController extends Controller
             'files' => $files,
             'categories' => LibraryCategory::query()->orderBy('name')->get(),
             'storageProvider' => config('library.storage_provider', 'local'),
+            'uploadLimitMb' => (int) ceil($uploadMaxKb / 1024),
         ]);
     }
 
     public function store(Request $request, LibraryStorageManager $storageManager, BookThumbnailService $thumbnailService)
     {
+        $uploadMaxKb = max(1024, (int) config('library.upload_max_kb', 204800));
+
         $data = $request->validate([
             'title' => ['required', 'string', 'max:180'],
             'category_id' => ['required', 'exists:library_categories,id'],
             'description' => ['nullable', 'string', 'max:500'],
             'author' => ['nullable', 'string', 'max:120'],
-            'pdf' => ['required', 'file', 'mimetypes:application/pdf', 'max:30720'],
+            'pdf' => ['required', 'file', 'mimetypes:application/pdf', 'max:'.$uploadMaxKb],
             'is_visible' => ['nullable', 'boolean'],
+        ], [
+            'pdf.max' => "The PDF exceeds the upload limit of {$uploadMaxKb} KB (about ".(int) ceil($uploadMaxKb / 1024).' MB).',
         ]);
 
         try {
