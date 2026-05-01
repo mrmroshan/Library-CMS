@@ -8,6 +8,10 @@
   - User management (role and active status)
   - Article management (create/edit/delete + pin on top)
   - PDF library management (upload/hide/remove)
+  - Category management for books
+- Homepage category filter for library books.
+- Book thumbnail generation and tile-style catalog listing.
+- In-app admin guide at `/admin/guide`.
 
 ## Storage provider strategy
 

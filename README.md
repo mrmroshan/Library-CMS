@@ -12,11 +12,13 @@ University Community Library CMS built with Laravel.
   - PDF upload/hide/remove
   - Category management for library books
 - Automatic thumbnail generation for library books
+- Amazon-style book tile listing with hover preview
+- Built-in admin user guide page (`/admin/guide`)
 
 ## Project structure
 
 - `backend/` - Laravel application source code
-- `.cursor/rules/` - Project-specific AI coding rules
+- `.cursor/` is intentionally ignored (personal local Cursor settings)
 
 ## Local setup
 
@@ -35,6 +37,11 @@ University Community Library CMS built with Laravel.
 
 - Email: `admin@university.local`
 - Password: `admin12345`
+
+## Notes
+
+- Storage provider is currently local by default.
+- Google Drive and OneDrive options are prepared in config but intentionally left as pending integrations.
 
 ## Additional docs
 
