@@ -1,4 +1,4 @@
-# University Community Library CMS
+# University of Sirte Zoology Department CMS
 
 ## Implemented scope
 

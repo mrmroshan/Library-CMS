@@ -1,6 +1,6 @@
 # Admin User Guide
 
-This guide explains how to operate the University Community Library CMS as an administrator.
+This guide explains how to operate the University of Sirte Zoology Department CMS as an administrator.
 
 ## 1. Login
 

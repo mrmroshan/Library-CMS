@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'University Community Library')</title>
+    <title>@yield('title', 'University of Sirte Zoology Department')</title>
     <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
 </head>
 <body>
     <header class="topbar">
         <div class="container topbar-inner">
-            <a class="brand" href="{{ route('home') }}">University Community Library</a>
+            <a class="brand" href="{{ route('home') }}">University of Sirte Zoology Department</a>
             <nav class="nav-links">
                 <a class="pill" href="{{ route('home') }}">Home</a>
                 @auth

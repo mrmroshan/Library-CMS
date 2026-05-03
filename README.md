@@ -1,6 +1,6 @@
 # Library CMS
 
-University Community Library CMS built with Laravel.
+University of Sirte Zoology Department CMS built with Laravel.
 
 ## What this project includes
 

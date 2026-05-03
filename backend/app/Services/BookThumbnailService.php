@@ -77,7 +77,7 @@ class BookThumbnailService
   <text x="34" y="135" fill="#ffffff" font-size="26" font-weight="700" font-family="Segoe UI, Arial, sans-serif">
     <tspan x="34" dy="0">{$safeTitle}</tspan>
   </text>
-  <text x="34" y="410" fill="#bfdbfe" font-size="14" font-family="Segoe UI, Arial, sans-serif">University Community Library</text>
+  <text x="34" y="410" fill="#bfdbfe" font-size="14" font-family="Segoe UI, Arial, sans-serif">University of Sirte Zoology Department</text>
 </svg>
 SVG;
 

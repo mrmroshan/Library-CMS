@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Community & Library')
+@section('title', 'University of Sirte Zoology Department')
 
 @section('content')
     <section class="hero">
-        <h1>University Community Hub</h1>
+        <h1>University of Sirte Zoology Department</h1>
         <p>
             Read public articles, announcements, and campus stories. Library PDFs are available for registered users only,
             with secure download tracking.
@@ -51,7 +51,7 @@
                 <p class="muted">No published articles yet.</p>
             @endforelse
         </div>
-        <div style="margin-top: 1rem;">{{ $articles->links() }}</div>
+        <div class="pagination">{{ $articles->links() }}</div>
     </section>
 
     <section class="panel" style="margin-top: 1rem; margin-bottom: 2rem;">
@@ -92,6 +92,6 @@
             @endforelse
         </div>
 
-        <div style="margin-top: 1rem;">{{ $libraryFiles->links() }}</div>
+        <div class="pagination">{{ $libraryFiles->links() }}</div>
     </section>
 @endsection
