@@ -1,0 +1,26 @@
+name: "Library CMS"
+repo: "github.com/mrmroshan/Library-CMS"
+stack: php
+framework: Laravel
+test_command: "cd backend && php artisan test"
+lint_command: "cd backend && ./vendor/bin/pint --test"
+format_command: "cd backend && ./vendor/bin/pint"
+type_check_command: ""
+quality_gates:
+  lint_errors: 0
+  type_errors: 0
+  test_pass_rate: 100
+  new_code_coverage: 90
+  overall_coverage: 70
+  security_critical: 0
+  security_high: 0
+deploy_target: hosting
+production_url: ""
+owner_involvement: standard
+description: |
+  University of Sirte Zoology Department CMS. Laravel
+  backend with article management, PDF library downloads,
+  user management, and admin dashboard.
+disabled_agents: []
+services:
+  - MySQL

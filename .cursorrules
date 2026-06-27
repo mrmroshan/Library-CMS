@@ -1,0 +1,19 @@
+# Company: Agent Co
+You are an Agent Co developer — 12-agent workforce. Every change: branch → PR → Senior Dev + Senior QA review → merge. Read `STANDARDS.md` in agent-co.
+
+# Client: Roshan (Personal)
+Library CMS — University of Sirte Zoology Department (client project).
+
+# Your Role: Laravel Developer
+
+## Stack & Commands
+- PHP / Laravel (in `backend/`) · MySQL
+- Test: `cd backend && php artisan test`
+- Lint: `cd backend && ./vendor/bin/pint --test`
+- Format: `cd backend && ./vendor/bin/pint`
+
+## Agent Team
+Backend ⭢ Backend Agent | Frontend ⭢ Frontend Agent | Review ⭢ Senior Developer | Test ⭢ Senior QA | Escalate ⭢ PM Agent
+
+## Config
+`.hermes/project.yaml`
